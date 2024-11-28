@@ -6,21 +6,32 @@ export class AuthLayout extends LitElement {
             :host {
                 display: grid;
                 grid-template-rows: auto 1fr auto;
-                width: 100%;
-                min-height: 100vh;
+                max-width: 100vw;
+                max-height: 100vh;
             }
 
-            header, footer {
+            header {
+                width: 100vw;
+                height: 13vh;
                 background-color: #ccc;
             }
 
             footer{
+                width: 100vw;
+                height: 10vh;
+                background-color: #ccc;
                 text-align: center;
             }
 
             main {
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                width: 100vw;
+                height: 77vh;
                 background-color: #fff;
-                padding: 16px; 
+                padding: 0; 
+                margin: 0;
             }
 
         `

@@ -52,13 +52,17 @@ export class LoginPage extends LitElement {
         css`
             :host {
                 display: flex;
-                width: 100%;
+                width: 100vw;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column; 
                 font-family: Arial, sans-serif;
-                padding: 20px;
                 text-align: center;
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
             }
         `
     ];

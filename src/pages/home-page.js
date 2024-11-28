@@ -4,7 +4,7 @@ import "@dile/ui/components/nav/nav.js";
 import "@dile/ui/components/menu-hamburger/menu-hamburger.js";
 
 import "../layouts/auth-layout.js";
-import { authMixin } from "../mixins/authMixin";
+import { authMixin } from "../mixins/auth-mixin.js";
 
 export class HomePage extends authMixin(LitElement) {
   static styles = [
@@ -14,19 +14,13 @@ export class HomePage extends authMixin(LitElement) {
         --dile-nav-background-color: var(--primary-color, #464444);
       }
 
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-
       p {
         color: #000;
       }
 
       button {
         width: 100%;
-        padding: 8px;
+        padding: 16px;
         background: #2b211f;
         color: white;
         border: none;
@@ -43,11 +37,9 @@ export class HomePage extends authMixin(LitElement) {
       h1 {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 80vh; 
+        text-align: center; 
         font-size: 4rem; 
         color: #000;
-        text-align: center; 
         opacity: 0;
         transform: translateY(50px); 
         animation: fadeInUp 1.5s ease-out forwards;

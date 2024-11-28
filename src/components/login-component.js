@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { authMixin } from '../mixins/authMixin';
+import { authMixin } from '../mixins/auth-mixin';
 import { Router } from '@vaadin/router';
 
 export class LoginComponent extends authMixin(LitElement) {
