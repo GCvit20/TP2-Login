@@ -32,6 +32,7 @@ export class AuthLayout extends LitElement {
                 background-color: #fff;
                 padding: 0; 
                 margin: 0;
+                
             }
 
         `
